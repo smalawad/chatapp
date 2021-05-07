@@ -1,5 +1,5 @@
 body {
-  /* background-color: #282c34; */
+  background-color: #282c34;
 }
 
 .App {
@@ -9,7 +9,7 @@ body {
 }
 
 .App header {
-  background-color: #ffe268;
+  background-color: #181717;
   height: 10vh;
   min-height: 50px;
   color: white;
@@ -31,7 +31,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   /* opacity: 0.5; */
-  /* background-color: rgb(40, 37, 53); */
+  background-color: rgb(40, 37, 53);
 }
 
 main {
@@ -50,11 +50,11 @@ main::-webkit-scrollbar {
 }
 
 main::-webkit-scrollbar-track {
-  /* background: #1e1e24; */
+  background: #1e1e24;
 }
 
 main::-webkit-scrollbar-thumb {
-  /* background: #6649b8; */
+  background: #6649b8;
 }
 
 form {
@@ -122,7 +122,7 @@ p {
   padding: 10px 20px;
   border-radius: 25px;
   position: relative;
-  color: black;
+  color: white;
   text-align: center;
 }
 
