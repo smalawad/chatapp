@@ -8,6 +8,8 @@ import 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
+import bgimg from './images/chatbg.jpg';
+
 firebase.initializeApp({
   apiKey: "AIzaSyCtKO1eKCQ7kCayJphUe9raznLjUdURLCo",
   authDomain: "chatapp-07.firebaseapp.com",
@@ -28,11 +30,14 @@ function App() {
   return (
     <div className="App">
       <header>
-       
+        <h1>⚛️🔥💬</h1>
+        <SignOut />
       </header>
 
       <section>
         { user ? <ChatRoom /> : <SignIn /> }
+        {/* <img src={"./images/chatbg.png"} alt="chat-background" /> */}
+        <img className="chatimg" src={bgimg} alt="img" /> 
       </section>
     </div>
   );
@@ -113,7 +118,7 @@ function ChatMessage(props) {
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
 
   return (
-    <div className={'message ${messageClass}'}>
+    <div className={`message ${messageClass}`}>
       <img src={photoURL} />
       <p>{ text }</p>
     </div>
