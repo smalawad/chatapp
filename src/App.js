@@ -8,7 +8,7 @@ import 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
-import bgimg from './images/chatbg.jpg';
+// import bgimg from './images/chatbg.jpg';
 
 firebase.initializeApp({
   apiKey: "AIzaSyCtKO1eKCQ7kCayJphUe9raznLjUdURLCo",
