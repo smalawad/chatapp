@@ -37,7 +37,7 @@ function App() {
       <section>
         { user ? <ChatRoom /> : <SignIn /> }
         {/* <img src={"./images/chatbg.png"} alt="chat-background" /> */}
-        <img className="chatimg" src={bgimg} alt="img" /> 
+        {/* <img className="chatimg" src={bgimg} alt="img" />  */}
       </section>
     </div>
   );
