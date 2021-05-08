@@ -42,6 +42,7 @@ main {
   display: flex;
   flex-direction: column;
   color:black;
+  z-index: 2;
   /* opacity: 0.5; */
 }
 
@@ -128,8 +129,7 @@ p {
 
 .message {
   display: flex;
-  align-items: center;
-  
+  align-items: center
 }
 
 
@@ -139,7 +139,7 @@ p {
 
 .sent p {
   color: white;
-  background: #0b93f6;
+  background: #1095ee;
   align-self: flex-end;
 }
 .received p {
@@ -155,7 +155,9 @@ img {
 }
 
 .chatimg {
-  width: 550px;
-  height: auto;
+  width: 728px;
+  height: 530px;
   border-radius: 0%;
+  margin: 2vh 0 10vh;
+  /* z-index: 1; */
 }

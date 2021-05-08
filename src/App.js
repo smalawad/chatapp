@@ -8,7 +8,7 @@ import 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
-// import bgimg from './images/chatbg.jpg';
+import bgimg from './images/chatbg.jpg';
 
 firebase.initializeApp({
   apiKey: "AIzaSyCtKO1eKCQ7kCayJphUe9raznLjUdURLCo",
@@ -36,7 +36,6 @@ function App() {
 
       <section>
         { user ? <ChatRoom /> : <SignIn /> }
-        {/* <img src={"./images/chatbg.png"} alt="chat-background" /> */}
         {/* <img className="chatimg" src={bgimg} alt="img" />  */}
       </section>
     </div>
